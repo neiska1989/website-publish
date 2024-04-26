@@ -1,0 +1,149 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    /*background: url(https://i.postimg.cc/766y7qXy/imgpsh-fullsize-anim.gif) no-repeat;*/
+    background-size: cover;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+h1 {
+	color: #FF0000;
+	font-size: 70px;
+}
+  
+header video {
+position: absolute;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: 0;
+-ms-transform: translateX(-50%) translateY(-50%);
+-moz-transform: translateX(-50%) translateY(-50%);
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+position: relative;
+z-index: 2;
+}
+
+header .overlay {
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: rgb(3, 3, 3);
+opacity: 0.5;
+z-index: 1;
+}
+
+.btn {
+    border-radius: 10px;
+}
+.win, .win:hover {
+    background-color: #ff0000;
+    border: 2px solid white;
+}
+
+.profile-container {
+    position: relative;
+    width: 350px;
+    padding: 100px 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stars i{
+    color:#FFD700;
+ }
+.stars span{
+    color:#FFD700;
+ }
+
+.social-container button {
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.3em;
+    cursor: pointer;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.social-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.social-container button:hover {
+    transform: scale(1.1);
+}
+
+.social-container button.whatsapp {
+    background: #09ff00;
+}
+
+.social-container button.twitter {
+    background: #39b4dd;
+}
+
+.social-container button.instagram {
+    background: linear-gradient(45deg, #e6683ccc 25%, #dc2743 50%,
+            #bc1888 100%);
+}
+
+.social-container button.snapchat {
+    background: #deeb26;
+}
+
+ul {
+    margin:0px 0 0 0;
+    padding:0;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    display: block;
+    font:200 16px 'Circular', arial,verdana;
+    padding:7px 10px 7px 10px;
+}
+
+ul li a b {
+    position: relative;
+    top: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 50px;
+    }
+}
